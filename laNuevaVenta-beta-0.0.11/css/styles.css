@@ -1,0 +1,44 @@
+:root {
+  --violeta-fuerte: #643AB6;
+  --violeta-claro: #8D66D6;
+  --cream: #F3FFBD;
+}
+
+/* Color personalizado */
+.text-violeta {
+  color: var(--violeta-fuerte) !important;
+}
+
+.text-cream {
+  color: var(--cream) !important;
+}
+
+.border-violeta {
+  border: 2px solid var(--violeta-claro) !important;
+}
+
+.form-control:focus {
+  border-color: var(--violeta-loi);
+  box-shadow: 0 0 0 0.25rem rgba(47, 22, 143, 0.2);
+}
+
+.navbar {
+  background-color: var(--violeta-fuerte);
+  padding-top: 14rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem;
+}
+
+.lupa-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
