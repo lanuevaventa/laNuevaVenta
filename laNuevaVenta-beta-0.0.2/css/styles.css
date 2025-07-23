@@ -1,0 +1,203 @@
+:root {
+  --violeta-fuerte: #643AB6;
+  --violeta-claro: #8D66D6;
+  --cream: #F3FFBD;
+}
+
+/* Color personalizado */
+.text-violeta {
+  color: var(--violeta-fuerte) !important;
+}
+
+.text-cream {
+  color: var(--cream) !important;
+}
+
+.border-violeta {
+  border: 2px solid var(--violeta-claro) !important;
+}
+
+.form-control:focus {
+  border-color: var(--violeta-claro);
+  box-shadow: 0 0 0 0.25rem rgba(47, 22, 143, 0.2);
+}
+
+main {
+  background-color: white;
+  color: var(--cream);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: var(--violeta-fuerte);
+  padding-top: 14rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem;
+}
+
+.lupa-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+/* ===== Layout principal de 3 columnas ===== */
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Columna central */
+.columna-central {
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+/* ===== Formulario ===== */
+.login-form {
+  background-color: var(--violeta-claro);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+/* Botón de volver */
+.btn-volver {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--cream);
+  cursor: pointer;
+}
+
+/* Logo redondo */
+.form-logo #logoPrin {
+  width: 60px;
+  height: 60px;
+  background-color: var(--violeta-claro);
+  border-radius: 50%;
+}
+
+/* Inputs personalizados */
+.input-form {
+  width: 100%;
+  padding: 0.6rem 4rem;
+  border: none;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--cream);
+  outline: none;
+}
+
+.input-form::placeholder {
+  color: var(--cream);
+  opacity: 0.8;
+}
+
+/* Botón Iniciar Sesión */
+.btn-iniciar {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 999px;
+  background-color: white;
+  color: var(--violeta-fuerte);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Enlaces */
+.link-olvide,
+.link-registrarse {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--cream);
+  opacity: 0.9;
+}
+
+.link-registrarse {
+  font-weight: bold;
+}
+
+/* Separador O */
+.separador {
+  display: flex;
+  align-items: center;
+  color: var(--cream);
+  font-weight: bold;
+}
+
+.separador::before,
+.separador::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--cream);
+  margin: 0 10px;
+}
+
+/* Otro método */
+.btn-otro-metodo {
+  background: none;
+  border: none;
+  color: var(--cream);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Botón de dropdown (ícono usuario) sin borde ni fondo adicional */
+.btn-login-dropdown {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Opciones del dropdown */
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.bg-navbar {
+  background-color: var(--violeta-fuerte) !important;
+}
+
+.dropdown-menu {
+  border: none; /* opcional: sin borde */
+}
+
+.dropdown-item {
+  color: var(--cream) !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #522e9e !important; /* un violeta más oscuro para hover */
+  color: var(--cream) !important;
+}
+
+#errorContrasena {
+  color: red;
+  font-size: 0.9em;
+}
