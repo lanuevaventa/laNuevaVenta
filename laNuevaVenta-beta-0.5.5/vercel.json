@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "rewrites": [
-    { "source": "/", "destination": "https://lanuevaventa.shop/" },
-    { "source": "/:path*.php", "destination": "https://lanuevaventa.shop/:path*.php" }
-  ]
-}
